@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bangladesh Islami Chhatrashibir - NSTU Chapter</title>
+
+  <!-- DaisyUI & Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="./assets/Bangladesh Islami Chhatra Shibir islamic university logo.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .card-hover:hover { transform: translateY(-5px); transition: 0.3s; }
+  </style>
+</head>
+<body class="islamic-pattern font-noto">
+
+  <!-- Mobile Sidebar Overlay -->
+  <div id="mobileOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+
+  <!-- Mobile Sidebar -->
+  <div id="mobileSidebar" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300">
+    <div class="p-4 border-b text-center">
+      <img src="shibir.png" alt="Shibir Logo" class="h-16 mx-auto mb-2" />
+      <h2 class="text-lg font-bold text-gray-800">Bangladesh Islami Chhatrashibir</h2>
+      <p class="text-sm text-gray-600">Islamic University Bangladesh</p>
+    </div>
+    <nav class="p-4 space-y-2">
+      <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded"><i class="fas fa-home mr-2"></i>Home</a>
+      <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded"><i class="fas fa-info-circle mr-2"></i>About</a>
+      <a href="#aims" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded"><i class="fas fa-bullseye mr-2"></i>Aims</a>
+      <a href="#president" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded"><i class="fas fa-user mr-2"></i>President</a>
+      <a href="#gallery" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded"><i class="fas fa-images mr-2"></i>Gallery</a>
+      <a href="#news" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded"><i class="fas fa-newspaper mr-2"></i>News</a>
+      <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-green-100 rounded"><i class="fas fa-envelope mr-2"></i>Contact</a>
+      <a href="supporter.php" class="block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Support Shibir</a>
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-sky-950 to-sky-800 shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <img src="assets/Bangladesh Islami Chhatra Shibir islamic university logo.jpg" alt="sibirlogo" class="h-14 w-14 md:h-18 md:w-18 rounded-full border-4 border-sky-500 shadow-md">
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="text-white hover:text-yellow-200 font-medium flex items-center"><i class="fas fa-home mr-1"></i>Home</a>
+          <a href="#about" class="text-white hover:text-yellow-200 font-medium flex items-center"><i class="fas fa-info-circle mr-1"></i>About</a>
+          <a href="#aims" class="text-white hover:text-yellow-200 font-medium flex items-center"><i class="fas fa-bullseye mr-1"></i>Aims</a>
+          <a href="#president" class="text-white hover:text-yellow-200 font-medium flex items-center"><i class="fas fa-user mr-1"></i>President</a>
+          <a href="#gallery" class="text-white hover:text-yellow-200 font-medium flex items-center"><i class="fas fa-images mr-1"></i>Gallery</a>
+          <a href="#news" class="text-white hover:text-yellow-200 font-medium flex items-center"><i class="fas fa-newspaper mr-1"></i>News</a>
+          <a href="#contact" class="text-white hover:text-yellow-200 font-medium flex items-center"><i class="fas fa-envelope mr-1"></i>Contact</a>
+          <a href="supporter.php" class="bg-yellow-400 text-gray-800 px-4 py-2 rounded-lg hover:bg-yellow-500">Support Shibir</a>
+        </nav>
+        <button id="mobileMenuToggle" class="md:hidden text-white focus:outline-none">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Carousel -->
+    <section id="home" class="relative">
+      <div class="carousel w-full h-[500px] md:h-[650px] relative overflow-hidden">
+        <div class="carousel-item w-full absolute inset-0 opacity-100 transition-opacity duration-1000">
+          <img src="./assets/top1.jpg" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="carousel-item w-full absolute inset-0 opacity-0 transition-opacity duration-1000">
+          <img src="./assets/top2.jpg" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+        <div class="carousel-item w-full absolute inset-0 opacity-0 transition-opacity duration-1000">
+          <img src="./assets/top3.jpg" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ... এখানে About, Aims, President, Gallery, News, Contact সব সেকশন থাকবে ... -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      &copy; 2025 Bangladesh Islami Chhatra Shibir, Islamic University Bangladesh. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile sidebar toggle
+    const toggleBtn = document.getElementById('mobileMenuToggle');
+    const sidebar = document.getElementById('mobileSidebar');
+    const overlay = document.getElementById('mobileOverlay');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('-translate-x-full');
+      overlay.classList.toggle('hidden');
+    });
+
+    overlay.addEventListener('click', () => {
+      sidebar.classList.add('-translate-x-full');
+      overlay.classList.add('hidden');
+    });
+
+    // Carousel Auto Slide
+    const slides = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+
+    setInterval(() => {
+      slides[currentIndex].classList.remove('opacity-100');
+      slides[currentIndex].classList.add('opacity-0');
+
+      currentIndex = (currentIndex + 1) % slides.length;
+
+      slides[currentIndex].classList.remove('opacity-0');
+      slides[currentIndex].classList.add('opacity-100');
+    }, 5000);
+
+    // Form submit alert
+    const contactForm = document.querySelector('form');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert("Thank you! Your message has been sent.");
+      contactForm.reset();
+    });
+  </script>
+
+</body>
+</html>
